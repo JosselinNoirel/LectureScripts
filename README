@@ -1,5 +1,15 @@
 -*- outline -*-
 
+* PROJECT INITIATION
+
+	echo "# LectureScripts" >> README.md
+	git init
+	git add README.md
+	git commit -m "first commit"
+	git remote add origin \
+		https://github.com/JosselinNoirel/LectureScripts.git
+	git push -u origin master
+
 * CREATE A NEW LECTURE
 
 Generally this would look like this:
