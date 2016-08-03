@@ -1,0 +1,28 @@
+-*- outline -*-
+
+* CREATE A NEW LECTURE
+
+Generally this would look like this:
+
+	template_create.pl -t "General introduction" genintro
+
+By default extra parameters are taken from the parameter file
+.parameters.dat, which will typically look like this:
+
+	module_name	M321
+	module_title	Probability theory and statistics
+	language	English
+
+Get some help using
+
+	template_create.pl -h
+
+* COMPILATION
+
+	for file in genintro_*.tex; do
+		pdflatex -interaction batchmode $file
+	done
+
+* CLEAN UP
+
+	rm -f *.aux *.log
